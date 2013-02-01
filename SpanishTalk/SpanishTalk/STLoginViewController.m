@@ -14,11 +14,14 @@
 
 @implementation STLoginViewController
 
+@synthesize emailField;
+@synthesize passwordField;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -33,6 +36,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)backgroundTap:(id)sender {
+    [emailField resignFirstResponder];
+    [passwordField resignFirstResponder];
 }
 
 @end

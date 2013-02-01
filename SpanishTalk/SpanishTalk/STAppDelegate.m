@@ -7,35 +7,12 @@
 //
 
 #import "STAppDelegate.h"
-//#import "STLoginViewController.h"
-//#import "STRegisterViewController.h"
-
 
 @implementation STAppDelegate
-
-//@synthesize mainTab = _mainTab;
-//@synthesize loginView = _loginView;
-//@synthesize registerView = _registerView;
-
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
-    //STLoginViewController *loginView = [[STLoginViewController alloc] init];
-    //STRegisterViewController *registerView = [[STRegisterViewController alloc] init];
-    
-    
-    //NSArray* controllers = [NSArray arrayWithObjects:loginView, registerView, nil];
-    
-    //self.mainTab.viewControllers = controllers;
-    
-    //self.window.rootViewController = loginView;
-        
-    //self.window.backgroundColor = [UIColor whiteColor];
-    //[self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -54,6 +31,8 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    [application resignFirstResponder];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

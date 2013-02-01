@@ -7,9 +7,9 @@
         <!--Login View Controller - 登录-->
         <scene sceneID="ldB-7o-Gaz">
             <objects>
-                <viewController storyboardIdentifier="1" title="登录" id="Kaa-nQ-IPG" customClass="STLoginViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ped-uE-NzH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                <viewController storyboardIdentifier="" title="登录" id="Kaa-nQ-IPG" customClass="STLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ped-uE-NzH" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUW-Ms-bBE">
@@ -22,48 +22,75 @@
                                     <constraint firstAttribute="width" constant="200" id="zVU-Pm-VYf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="backgroundTap:" destination="Kaa-nQ-IPG" eventType="touchDown" id="1eS-a9-SCE"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Kh-PD-q9v">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="backgroundTap:" destination="Kaa-nQ-IPG" eventType="touchDown" id="3vy-Oi-FXI"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0o-A5-FDi">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBS-R3-qTo">
+                                <items>
+                                    <navigationItem title="登录" id="Yej-E3-lxO">
+                                        <barButtonItem key="leftBarButtonItem" title="后退" id="FqW-7c-cUd"/>
+                                        <barButtonItem key="rightBarButtonItem" title="登录" id="ueg-zZ-y2E">
+                                            <connections>
+                                                <action selector="backgroundTap:" destination="Kaa-nQ-IPG" id="5z4-er-m5M"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pBS-R3-qTo" firstAttribute="leading" secondItem="ped-uE-NzH" secondAttribute="leading" type="default" id="0yl-wh-Wgg"/>
+                            <constraint firstItem="FQ9-aP-Lwe" firstAttribute="top" secondItem="FUW-Ms-bBE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3fm-zd-cbP"/>
+                            <constraint firstItem="pBS-R3-qTo" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" type="default" id="49W-oW-ZFc"/>
+                            <constraint firstItem="FUW-Ms-bBE" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="73" id="CxO-GE-Ltq"/>
                             <constraint firstItem="E0o-A5-FDi" firstAttribute="leading" secondItem="1Kh-PD-q9v" secondAttribute="leading" type="default" id="DUu-Vx-3w4"/>
-                            <constraint firstItem="FUW-Ms-bBE" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="20" symbolic="YES" type="default" id="OvJ-JS-dk1"/>
+                            <constraint firstItem="E0o-A5-FDi" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="165" id="MWC-Rb-uiu"/>
+                            <constraint firstItem="1Kh-PD-q9v" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="202" id="SK7-Si-Ejp"/>
                             <constraint firstItem="FQ9-aP-Lwe" firstAttribute="leading" secondItem="FUW-Ms-bBE" secondAttribute="leading" type="default" id="TjU-5F-itN"/>
-                            <constraint firstItem="FQ9-aP-Lwe" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="47" id="URD-Ms-G9X"/>
                             <constraint firstItem="E0o-A5-FDi" firstAttribute="leading" secondItem="FQ9-aP-Lwe" secondAttribute="leading" type="default" id="W3J-eN-czu"/>
+                            <constraint firstItem="pBS-R3-qTo" firstAttribute="trailing" secondItem="ped-uE-NzH" secondAttribute="trailing" type="default" id="dK2-WG-D9n"/>
                             <constraint firstItem="FUW-Ms-bBE" firstAttribute="leading" secondItem="ped-uE-NzH" secondAttribute="leading" constant="34" id="jBF-8s-BHc"/>
                             <constraint firstItem="FQ9-aP-Lwe" firstAttribute="trailing" secondItem="1Kh-PD-q9v" secondAttribute="trailing" type="default" id="qu9-6N-z1e"/>
-                            <constraint firstItem="1Kh-PD-q9v" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="158" id="tJB-yf-Vrr"/>
-                            <constraint firstItem="E0o-A5-FDi" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="121" id="x7p-qa-pkl"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="Kaa-nQ-IPG" eventType="touchDown" id="bQR-pq-SRl"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="登录" image="apple.png" id="wPV-uS-dAL"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailField" destination="FQ9-aP-Lwe" id="kJi-oC-afT"/>
+                        <outlet property="passwordField" destination="1Kh-PD-q9v" id="fSF-PY-0ch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVX-bP-OGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3258" y="-386"/>
+            <point key="canvasLocation" x="2804" y="426"/>
         </scene>
-        <!--Register View Controller - 注册-->
-        <scene sceneID="fJe-H9-f70">
+        <!--View Controller - 问题列表-->
+        <scene sceneID="DDI-v1-Vsw">
             <objects>
-                <viewController storyboardIdentifier="" title="注册" id="mLw-Lt-ynZ" customClass="STRegisterViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XxY-rh-qXp" customClass="UITabBar">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                <viewController storyboardIdentifier="1" title="问题列表" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OY6-ld-7Q7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AyC-dt-211">
+                        <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="邮箱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPR-Oa-527">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hello world" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3F-JX-7NE">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,42 +98,60 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aPR-Oa-527" firstAttribute="leading" secondItem="XxY-rh-qXp" secondAttribute="leading" constant="67" id="MC4-DV-zzx"/>
-                            <constraint firstItem="aPR-Oa-527" firstAttribute="top" secondItem="XxY-rh-qXp" secondAttribute="top" constant="27" id="a7F-JF-zL1"/>
+                            <constraint firstItem="V3F-JX-7NE" firstAttribute="leading" secondItem="AyC-dt-211" secondAttribute="leading" constant="73" id="CkO-Qo-JJh"/>
+                            <constraint firstItem="V3F-JX-7NE" firstAttribute="top" secondItem="AyC-dt-211" secondAttribute="top" constant="60" id="NGr-1F-l2a"/>
                         </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="所有问题" image="crown.png" id="J6p-Kf-YdO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ak-c4-UIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="-295"/>
+        </scene>
+        <!--Register View Controller - 注册-->
+        <scene sceneID="fJe-H9-f70">
+            <objects>
+                <viewController storyboardIdentifier="" title="注册" id="mLw-Lt-ynZ" customClass="STRegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XxY-rh-qXp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="注册" image="lemon.png" id="xdm-Po-825"/>
                     <navigationItem key="navigationItem" id="chr-W7-UUC"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="La9-i2-aM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="271"/>
+            <point key="canvasLocation" x="2276" y="1095"/>
         </scene>
         <!--Tab Bar Controller - SpanishTalk-->
         <scene sceneID="jre-Rf-aep">
             <objects>
-                <tabBarController title="SpanishTalk" definesPresentationContext="YES" id="RZL-xV-6kS" sceneMemberID="viewController">
+                <tabBarController title="SpanishTalk" wantsFullScreenLayout="YES" definesPresentationContext="YES" id="RZL-xV-6kS" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="OzK-EZ-VU9">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Kaa-nQ-IPG" kind="relationship" relationship="viewControllers" id="aXS-ND-SHd"/>
-                        <segue destination="mLw-Lt-ynZ" kind="relationship" relationship="viewControllers" id="Pqk-pP-IPL"/>
+                        <segue destination="OY6-ld-7Q7" kind="relationship" relationship="viewControllers" id="5hK-0R-5Af"/>
+                        <segue destination="Kaa-nQ-IPG" kind="relationship" relationship="viewControllers" id="mo3-gb-VBR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXl-dI-95q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2518" y="-119"/>
+            <point key="canvasLocation" x="2248" y="29"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple.png" width="52" height="46"/>
+        <image name="crown.png" width="52" height="46"/>
         <image name="lemon.png" width="52" height="46"/>
     </resources>
     <classes>
@@ -115,6 +160,11 @@
         </class>
         <class className="STLoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/STLoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTap:"/>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="STRegisterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/STRegisterViewController.h"/>

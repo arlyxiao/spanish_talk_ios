@@ -10,4 +10,10 @@
 
 @interface STLoginViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *emailField;
+
+@property (strong, nonatomic) IBOutlet UITextField *passwordField;
+
+- (IBAction)backgroundTap:(id)sender;
+
 @end
