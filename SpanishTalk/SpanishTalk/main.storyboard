@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RZL-xV-6kS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller - 登录-->
+        <scene sceneID="ldB-7o-Gaz">
+            <objects>
+                <viewController storyboardIdentifier="1" title="登录" id="Kaa-nQ-IPG" customClass="STLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ped-uE-NzH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUW-Ms-bBE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQ9-aP-Lwe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="zVU-Pm-VYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Kh-PD-q9v">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0o-A5-FDi">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0o-A5-FDi" firstAttribute="leading" secondItem="1Kh-PD-q9v" secondAttribute="leading" type="default" id="DUu-Vx-3w4"/>
+                            <constraint firstItem="FUW-Ms-bBE" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="20" symbolic="YES" type="default" id="OvJ-JS-dk1"/>
+                            <constraint firstItem="FQ9-aP-Lwe" firstAttribute="leading" secondItem="FUW-Ms-bBE" secondAttribute="leading" type="default" id="TjU-5F-itN"/>
+                            <constraint firstItem="FQ9-aP-Lwe" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="47" id="URD-Ms-G9X"/>
+                            <constraint firstItem="E0o-A5-FDi" firstAttribute="leading" secondItem="FQ9-aP-Lwe" secondAttribute="leading" type="default" id="W3J-eN-czu"/>
+                            <constraint firstItem="FUW-Ms-bBE" firstAttribute="leading" secondItem="ped-uE-NzH" secondAttribute="leading" constant="34" id="jBF-8s-BHc"/>
+                            <constraint firstItem="FQ9-aP-Lwe" firstAttribute="trailing" secondItem="1Kh-PD-q9v" secondAttribute="trailing" type="default" id="qu9-6N-z1e"/>
+                            <constraint firstItem="1Kh-PD-q9v" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="158" id="tJB-yf-Vrr"/>
+                            <constraint firstItem="E0o-A5-FDi" firstAttribute="top" secondItem="ped-uE-NzH" secondAttribute="top" constant="121" id="x7p-qa-pkl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="登录" image="apple.png" id="wPV-uS-dAL"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVX-bP-OGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="-386"/>
+        </scene>
+        <!--Register View Controller - 注册-->
+        <scene sceneID="fJe-H9-f70">
+            <objects>
+                <viewController storyboardIdentifier="" title="注册" id="mLw-Lt-ynZ" customClass="STRegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XxY-rh-qXp" customClass="UITabBar">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="邮箱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPR-Oa-527">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aPR-Oa-527" firstAttribute="leading" secondItem="XxY-rh-qXp" secondAttribute="leading" constant="67" id="MC4-DV-zzx"/>
+                            <constraint firstItem="aPR-Oa-527" firstAttribute="top" secondItem="XxY-rh-qXp" secondAttribute="top" constant="27" id="a7F-JF-zL1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="注册" image="lemon.png" id="xdm-Po-825"/>
+                    <navigationItem key="navigationItem" id="chr-W7-UUC"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="La9-i2-aM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004" y="271"/>
+        </scene>
+        <!--Tab Bar Controller - SpanishTalk-->
+        <scene sceneID="jre-Rf-aep">
+            <objects>
+                <tabBarController title="SpanishTalk" definesPresentationContext="YES" id="RZL-xV-6kS" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OzK-EZ-VU9">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Kaa-nQ-IPG" kind="relationship" relationship="viewControllers" id="aXS-ND-SHd"/>
+                        <segue destination="mLw-Lt-ynZ" kind="relationship" relationship="viewControllers" id="Pqk-pP-IPL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXl-dI-95q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="-119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.png" width="52" height="46"/>
+        <image name="lemon.png" width="52" height="46"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="STLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/STLoginViewController.h"/>
+        </class>
+        <class className="STRegisterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/STRegisterViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

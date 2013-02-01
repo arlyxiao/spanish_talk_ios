@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8D5E8F216BA8FE0009607E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5E8F116BA8FE0009607E7 /* UIKit.framework */; };
+		A8D5E8F416BA8FE0009607E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5E8F316BA8FE0009607E7 /* Foundation.framework */; };
+		A8D5E8F616BA8FE0009607E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5E8F516BA8FE0009607E7 /* CoreGraphics.framework */; };
+		A8D5E8FC16BA8FE0009607E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E8FA16BA8FE0009607E7 /* InfoPlist.strings */; };
+		A8D5E8FE16BA8FE0009607E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5E8FD16BA8FE0009607E7 /* main.m */; };
+		A8D5E90216BA8FE0009607E7 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5E90116BA8FE0009607E7 /* STAppDelegate.m */; };
+		A8D5E90416BA8FE0009607E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E90316BA8FE0009607E7 /* Default.png */; };
+		A8D5E90616BA8FE0009607E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E90516BA8FE0009607E7 /* Default@2x.png */; };
+		A8D5E90816BA8FE0009607E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E90716BA8FE0009607E7 /* Default-568h@2x.png */; };
+		A8D5E91616BA9565009607E7 /* STLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5E91416BA9565009607E7 /* STLoginViewController.m */; };
+		A8D5E92C16BAA576009607E7 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E92B16BAA576009607E7 /* main.storyboard */; };
+		A8D5E92F16BAB0B8009607E7 /* STRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5E92E16BAB0B8009607E7 /* STRegisterViewController.m */; };
+		A8D5E93A16BABAF2009607E7 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E93516BABAF2009607E7 /* apple.png */; };
+		A8D5E93B16BABAF2009607E7 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E93616BABAF2009607E7 /* bar.png */; };
+		A8D5E93C16BABAF2009607E7 /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E93716BABAF2009607E7 /* cherry.png */; };
+		A8D5E93D16BABAF2009607E7 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E93816BABAF2009607E7 /* crown.png */; };
+		A8D5E93E16BABAF2009607E7 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D5E93916BABAF2009607E7 /* lemon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8D5E8ED16BA8FE0009607E7 /* SpanishTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpanishTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D5E8F116BA8FE0009607E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A8D5E8F316BA8FE0009607E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8D5E8F516BA8FE0009607E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8D5E8F916BA8FE0009607E7 /* SpanishTalk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpanishTalk-Info.plist"; sourceTree = "<group>"; };
+		A8D5E8FB16BA8FE0009607E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D5E8FD16BA8FE0009607E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8D5E8FF16BA8FE0009607E7 /* SpanishTalk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpanishTalk-Prefix.pch"; sourceTree = "<group>"; };
+		A8D5E90016BA8FE0009607E7 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
+		A8D5E90116BA8FE0009607E7 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
+		A8D5E90316BA8FE0009607E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A8D5E90516BA8FE0009607E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A8D5E90716BA8FE0009607E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A8D5E91316BA9565009607E7 /* STLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLoginViewController.h; sourceTree = "<group>"; };
+		A8D5E91416BA9565009607E7 /* STLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLoginViewController.m; sourceTree = "<group>"; };
+		A8D5E92B16BAA576009607E7 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		A8D5E92D16BAB0B8009607E7 /* STRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRegisterViewController.h; sourceTree = "<group>"; };
+		A8D5E92E16BAB0B8009607E7 /* STRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRegisterViewController.m; sourceTree = "<group>"; };
+		A8D5E93516BABAF2009607E7 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		A8D5E93616BABAF2009607E7 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		A8D5E93716BABAF2009607E7 /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		A8D5E93816BABAF2009607E7 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		A8D5E93916BABAF2009607E7 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D5E8EA16BA8FE0009607E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D5E8F216BA8FE0009607E7 /* UIKit.framework in Frameworks */,
+				A8D5E8F416BA8FE0009607E7 /* Foundation.framework in Frameworks */,
+				A8D5E8F616BA8FE0009607E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8D5E8E216BA8FDF009607E7 = {
+			isa = PBXGroup;
+			children = (
+				A8D5E8F716BA8FE0009607E7 /* SpanishTalk */,
+				A8D5E8F016BA8FE0009607E7 /* Frameworks */,
+				A8D5E8EE16BA8FE0009607E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D5E8EE16BA8FE0009607E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E8ED16BA8FE0009607E7 /* SpanishTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8D5E8F016BA8FE0009607E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E8F116BA8FE0009607E7 /* UIKit.framework */,
+				A8D5E8F316BA8FE0009607E7 /* Foundation.framework */,
+				A8D5E8F516BA8FE0009607E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8D5E8F716BA8FE0009607E7 /* SpanishTalk */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E93416BABABD009607E7 /* resources */,
+				A8D5E91216BA953E009607E7 /* General */,
+				A8D5E90016BA8FE0009607E7 /* STAppDelegate.h */,
+				A8D5E90116BA8FE0009607E7 /* STAppDelegate.m */,
+				A8D5E8F816BA8FE0009607E7 /* Supporting Files */,
+			);
+			path = SpanishTalk;
+			sourceTree = "<group>";
+		};
+		A8D5E8F816BA8FE0009607E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E8F916BA8FE0009607E7 /* SpanishTalk-Info.plist */,
+				A8D5E8FA16BA8FE0009607E7 /* InfoPlist.strings */,
+				A8D5E8FD16BA8FE0009607E7 /* main.m */,
+				A8D5E8FF16BA8FE0009607E7 /* SpanishTalk-Prefix.pch */,
+				A8D5E90316BA8FE0009607E7 /* Default.png */,
+				A8D5E90516BA8FE0009607E7 /* Default@2x.png */,
+				A8D5E90716BA8FE0009607E7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8D5E91216BA953E009607E7 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E92B16BAA576009607E7 /* main.storyboard */,
+				A8D5E91316BA9565009607E7 /* STLoginViewController.h */,
+				A8D5E91416BA9565009607E7 /* STLoginViewController.m */,
+				A8D5E92D16BAB0B8009607E7 /* STRegisterViewController.h */,
+				A8D5E92E16BAB0B8009607E7 /* STRegisterViewController.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		A8D5E93416BABABD009607E7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5E93516BABAF2009607E7 /* apple.png */,
+				A8D5E93616BABAF2009607E7 /* bar.png */,
+				A8D5E93716BABAF2009607E7 /* cherry.png */,
+				A8D5E93816BABAF2009607E7 /* crown.png */,
+				A8D5E93916BABAF2009607E7 /* lemon.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D5E8EC16BA8FE0009607E7 /* SpanishTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D5E90B16BA8FE0009607E7 /* Build configuration list for PBXNativeTarget "SpanishTalk" */;
+			buildPhases = (
+				A8D5E8E916BA8FE0009607E7 /* Sources */,
+				A8D5E8EA16BA8FE0009607E7 /* Frameworks */,
+				A8D5E8EB16BA8FE0009607E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpanishTalk;
+			productName = SpanishTalk;
+			productReference = A8D5E8ED16BA8FE0009607E7 /* SpanishTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D5E8E416BA8FDF009607E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ST;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Arly Xiao";
+			};
+			buildConfigurationList = A8D5E8E716BA8FDF009607E7 /* Build configuration list for PBXProject "SpanishTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A8D5E8E216BA8FDF009607E7;
+			productRefGroup = A8D5E8EE16BA8FE0009607E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D5E8EC16BA8FE0009607E7 /* SpanishTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D5E8EB16BA8FE0009607E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D5E8FC16BA8FE0009607E7 /* InfoPlist.strings in Resources */,
+				A8D5E90416BA8FE0009607E7 /* Default.png in Resources */,
+				A8D5E90616BA8FE0009607E7 /* Default@2x.png in Resources */,
+				A8D5E90816BA8FE0009607E7 /* Default-568h@2x.png in Resources */,
+				A8D5E92C16BAA576009607E7 /* main.storyboard in Resources */,
+				A8D5E93A16BABAF2009607E7 /* apple.png in Resources */,
+				A8D5E93B16BABAF2009607E7 /* bar.png in Resources */,
+				A8D5E93C16BABAF2009607E7 /* cherry.png in Resources */,
+				A8D5E93D16BABAF2009607E7 /* crown.png in Resources */,
+				A8D5E93E16BABAF2009607E7 /* lemon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D5E8E916BA8FE0009607E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D5E8FE16BA8FE0009607E7 /* main.m in Sources */,
+				A8D5E90216BA8FE0009607E7 /* STAppDelegate.m in Sources */,
+				A8D5E91616BA9565009607E7 /* STLoginViewController.m in Sources */,
+				A8D5E92F16BAB0B8009607E7 /* STRegisterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8D5E8FA16BA8FE0009607E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D5E8FB16BA8FE0009607E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8D5E90916BA8FE0009607E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A8D5E90A16BA8FE0009607E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8D5E90C16BA8FE0009607E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpanishTalk/SpanishTalk-Prefix.pch";
+				INFOPLIST_FILE = "SpanishTalk/SpanishTalk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8D5E90D16BA8FE0009607E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpanishTalk/SpanishTalk-Prefix.pch";
+				INFOPLIST_FILE = "SpanishTalk/SpanishTalk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D5E8E716BA8FDF009607E7 /* Build configuration list for PBXProject "SpanishTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D5E90916BA8FE0009607E7 /* Debug */,
+				A8D5E90A16BA8FE0009607E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D5E90B16BA8FE0009607E7 /* Build configuration list for PBXNativeTarget "SpanishTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D5E90C16BA8FE0009607E7 /* Debug */,
+				A8D5E90D16BA8FE0009607E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8D5E8E416BA8FDF009607E7 /* Project object */;
+}
